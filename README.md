@@ -11,23 +11,23 @@ The objective is to transform raw, unstructured text into a clean and structured
 - Prepare a dataset for text classification
 
 - **Dataset Categories**
-The project collects Wikipedia articles from the following categories:
+- The project collects Wikipedia articles from the following categories:
 
 - Artificial Intelligence
 - Climate Change
 - Space Exploration
 - World History
-Each category contains 15 articles.
+- Each category contains 15 articles.
 
 **Project Workflow**
 **Step 1: Data Collection**
-wikipedia articles are scraped using:
+- wikipedia articles are scraped using:
 - Requests
 - BeautifulSoup
-The main article content is extracted while ignoring references, links, and unnecessary elements.
+- The main article content is extracted while ignoring references, links, and unnecessary elements.
 
 **Step 2: Text Cleaning**
-The following preprocessing operations are performed:
+- The following preprocessing operations are performed:
 - Remove HTML tags
 - Remove citations such as [1], [23]
 - Remove punctuation and special characters
@@ -39,22 +39,22 @@ The following preprocessing operations are performed:
 - Text is split into individual words using:  nltk.word_tokenize()
 
 **Stopword Removal**
-Common words such as: the, is, and, of, in  are removed.
+- Common words such as: the, is, and, of, in  are removed.
 
 **Stemming**
-Words are reduced to their root forms using: PorterStemmer
+- Words are reduced to their root forms using: PorterStemmer
 
 **Lemmatization**
 - Words are converted to meaningful base forms using: WordNetLemmatizer
 
 **Step 4: Create Final Clean Text**
-Processed tokens are joined back into sentences.
+- Processed tokens are joined back into sentences.
 
 **Step 5: TF-IDF Feature Extraction**
 - Text is converted into numerical vectors using: TfidfVectorizer
 - The dataset is split into:
-80% Training Data
-20% Testing Data
+- 80% Training Data
+- 20% Testing Data
 - TF-IDF helps identify important words in each category.
 
 **Technologies Used**
@@ -66,13 +66,13 @@ Processed tokens are joined back into sentences.
 - NLTK
 - Scikit-Learn
 
-  📁 **Output Files**
+📁 **Output Files**
 **raw_dataset.csv**
 - Contains original scraped Wikipedia articles.
 **cleaned_dataset.csv**
 - Contains cleaned text and tokenized data.
 **final_dataset.csv**
-Contains:
+**Contains:**
 - clean_text
 - Label
 - token_count
@@ -95,14 +95,14 @@ Contains:
 - Build a complete NLP prediction system
 - NLP Data Preparation Pipeline
   
-🚀 Future Improvements
-Train Machine Learning classifiers
-Compare TF-IDF with Word2Vec and BERT embeddings
-Perform Text Classification
-Add Data Visualization
-Build a complete NLP prediction system
+🚀 **Future Improvements**
+- Train Machine Learning classifiers
+- Compare TF-IDF with Word2Vec and BERT embeddings
+- Perform Text Classification
+- Add Data Visualization
+- Build a complete NLP prediction system
 
 👨‍💻 **Author**
-  Snehal Palve
+  - Snehal Palve
 **Email**
-snehalpalve02@gmail.com
+- snehalpalve02@gmail.com
