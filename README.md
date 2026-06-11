@@ -21,6 +21,7 @@ The objective is to transform raw, unstructured text into a clean and structured
 - Each category contains 15 articles.
 
 **Project Workflow**
+
 **Step 1: Data Collection**
 - wikipedia articles are scraped using:
 - Requests
@@ -37,22 +38,22 @@ The objective is to transform raw, unstructured text into a clean and structured
 
 **Step 3: NLP Preprocessing**
 **Tokenization**
-- Text is split into individual words using:  nltk.word_tokenize()
+- Text is split into individual words using:  __nltk.word_tokenize()__
 
 **Stopword Removal**
 - Common words such as: the, is, and, of, in  are removed.
 
 **Stemming**
-- Words are reduced to their root forms using: PorterStemmer
+- Words are reduced to their root forms using: __PorterStemmer__
 
 **Lemmatization**
-- Words are converted to meaningful base forms using: WordNetLemmatizer
+- Words are converted to meaningful base forms using: __WordNetLemmatizer__
 
 **Step 4: Create Final Clean Text**
 - Processed tokens are joined back into sentences.
 
 **Step 5: TF-IDF Feature Extraction**
-- Text is converted into numerical vectors using: TfidfVectorizer
+- Text is converted into numerical vectors using: __TfidfVectorizer__
 - The dataset is split into:
 - 80% Training Data
 - 20% Testing Data
@@ -68,11 +69,13 @@ The objective is to transform raw, unstructured text into a clean and structured
 - Scikit-Learn
 
 📁 **Output Files**
+
 **raw_dataset.csv:**  Contains original scraped Wikipedia articles.
 
 **cleaned_dataset.csv:** Contains cleaned text and tokenized data.
 
 **final_dataset.csv:** **Contains:**
+
 - clean_text
 - Label
 - token_count
