@@ -1,5 +1,6 @@
 📚 **Text Preprocessing Pipeline using NLP** 
--📌 **Project Overview**
+
+📌 **Project Overview**
 - This project demonstrates a complete Natural Language Processing (NLP) Text Preprocessing Pipeline. The pipeline collects text data from Wikipedia, cleans and preprocesses the text, converts it into numerical features using TF-IDF, and prepares it for Machine Learning classification tasks.
 The objective is to transform raw, unstructured text into a clean and structured format suitable for machine learning models.
 
@@ -67,12 +68,9 @@ The objective is to transform raw, unstructured text into a clean and structured
 - Scikit-Learn
 
 📁 **Output Files**
-**raw_dataset.csv:**
-- Contains original scraped Wikipedia articles.
-**cleaned_dataset.csv:**
-- Contains cleaned text and tokenized data.
-**final_dataset.csv:**
-**Contains:**
+**raw_dataset.csv:**  Contains original scraped Wikipedia articles.
+**cleaned_dataset.csv:** Contains cleaned text and tokenized data.
+**final_dataset.csv:** **Contains:**
 - clean_text
 - Label
 - token_count
@@ -96,5 +94,6 @@ The objective is to transform raw, unstructured text into a clean and structured
 
 👨‍💻 **Author**
   - Snehal Palve
-**Email**
+    
+ **Email**
 - snehalpalve02@gmail.com
